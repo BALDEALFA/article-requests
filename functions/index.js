@@ -10,3 +10,9 @@ exports.randomNumber = functions.https.onRequest((request, response) => {
 exports.toIEEE = functions.https.onRequest((request, response) => {
   response.redirect("https://www.ieee.org/");
 });
+
+// http callable function
+exports.sayHello = functions.https.onCall((data, context) => {
+  const name = data.name;
+  return `hello, ${name}`;
+});
