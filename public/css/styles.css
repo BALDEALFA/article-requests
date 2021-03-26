@@ -29,12 +29,12 @@ header {
 }
 header a {
 	margin-left: 10px;
-	border-bottom: 2px solid #64d392;
+	border-bottom: 2px solid #ffe100;
 	padding: 4px;
 	cursor: pointer;
 }
 header a:hover {
-	background: #64d392;
+	background: #ffe100;
 	color: black;
 }
 
@@ -66,7 +66,7 @@ header a:hover {
 }
 .request-list .upvote:active {
 	color: black;
-	background: #64d392;
+	background: #ffe100;
 }
 
 /* modal styles */
@@ -102,7 +102,7 @@ input {
 button {
 	margin-top: 10px;
 	padding: 8px 12px;
-	background: #64d392;
+	background: #ffe100;
 	border: 0;
 	font-weight: bold;
 	font-family: inherit;
@@ -130,4 +130,23 @@ button {
 }
 .auth .modal.active {
 	display: block;
+}
+
+/* notification */
+.notification {
+	width: 200px;
+	padding: 20px;
+	position: fixed;
+	left: 50%;
+	margin-left: -110px;
+	top: 0;
+	border-radius: 0 0 5px 5px;
+	background: #ec2d2d;
+	text-align: center;
+	color: #fff;
+	margin-top: -100%;
+	transition: all 0.4s;
+}
+.notification.active {
+	margin-top: 0;
 }
